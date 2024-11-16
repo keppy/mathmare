@@ -1,0 +1,53 @@
+model:
+  # Pretrained models
+  vision_model: "openai/clip-vit-large-patch14"
+  text_model: "microsoft/phi-2"
+  
+  # Architecture
+  hidden_size: 2048
+  intermediate_size: 8192
+  num_attention_heads: 32
+  num_hidden_layers: 24
+  
+  # RoPE settings
+  partial_rotary_factor: 0.5
+  rope_theta: 10000.0
+  
+  # Other settings
+  max_text_len: 512
+  dropout: 0.0
+  bias: true
+
+training:
+  # Basic settings
+  batch_size: 8
+  gradient_accumulation_steps: 4
+  num_epochs: 50
+  
+  # Learning rates
+  learning_rate: 1e-4
+  min_lr: 1e-5
+  warmup_steps: 1000
+  
+  # Optimization
+  weight_decay: 0.1
+  betas: [0.9, 0.95]
+  max_grad_norm: 1.0
+  
+  # Progressive training
+  phase1_epochs: 5
+  phase1_lr: 1e-4
+  phase2_epochs: 10
+  phase2_lr: 5e-5
+  phase3_epochs: 10
+  phase3_lr: 1e-5
+
+# Logging and saving
+log_interval: 10
+save_interval: 1000
+eval_interval: 100
+
+# Computing
+dtype: "bfloat16"
+compile: true
+gradient_checkpointing: true

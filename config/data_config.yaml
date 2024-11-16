@@ -1,0 +1,19 @@
+# Image processing
+min_size: 512
+target_size: 224  # CLIP's native size
+max_aspect_ratio: 1.5
+num_workers: 4
+
+# Text processing
+max_text_length: 512
+vision_model: "openai/clip-vit-large-patch14"
+text_model: "microsoft/phi-2"
+
+# Preprocessing
+normalize_mean: [0.48145466, 0.4578275, 0.40821073]  # CLIP values
+normalize_std: [0.26862954, 0.26130258, 0.27577711]  # CLIP values
+
+# Splits
+train_ratio: 0.8
+val_ratio: 0.1
+test_ratio: 0.1

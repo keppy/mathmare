@@ -1,0 +1,136 @@
+# Core calculus concepts
+limits:
+  difficulty: 3
+  topic_area: calculus
+  prerequisites: [functions, sequences]
+  related_concepts: [continuity, derivatives]
+  description: "Understanding how functions behave as they approach specific values"
+  visualization_elements:
+    - function_curve
+    - approach_arrows
+    - limit_point
+    - epsilon_delta_bands
+
+derivatives:
+  difficulty: 4
+  topic_area: calculus
+  prerequisites: [limits, functions]
+  related_concepts: [rates_of_change, tangent_lines]
+  description: "Rate of change of a function at a point"
+  visualization_elements:
+    - tangent_line
+    - secant_line
+    - slope_triangle
+    - rate_of_change_graph
+
+integrals:
+  difficulty: 4
+  topic_area: calculus
+  prerequisites: [derivatives, area]
+  related_concepts: [area_under_curve, antiderivatives]
+  description: "Accumulation and area under curves"
+  visualization_elements:
+    - riemann_rectangles
+    - accumulation_region
+    - bounded_area
+    - summation_notation
+
+# Fundamental concepts
+functions:
+  difficulty: 2
+  topic_area: precalculus
+  prerequisites: [algebra, coordinates]
+  related_concepts: [graphs, mappings]
+  description: "Relationships between inputs and outputs"
+  visualization_elements:
+    - coordinate_plane
+    - function_curve
+    - input_output_mapping
+    - domain_range
+
+sequences:
+  difficulty: 2
+  topic_area: precalculus
+  prerequisites: [functions]
+  related_concepts: [series, patterns]
+  description: "Ordered lists of numbers following patterns"
+  visualization_elements:
+    - number_line
+    - sequence_points
+    - pattern_arrows
+    - recursive_elements
+
+# Geometric concepts
+vectors:
+  difficulty: 3
+  topic_area: linear_algebra
+  prerequisites: [coordinates, arithmetic]
+  related_concepts: [force, velocity, matrices]
+  description: "Quantities with both magnitude and direction"
+  visualization_elements:
+    - arrow_representation
+    - component_breakdown
+    - vector_addition
+    - unit_vectors
+
+transformations:
+  difficulty: 3
+  topic_area: geometry
+  prerequisites: [functions, coordinates]
+  related_concepts: [symmetry, matrices]
+  description: "Changes in position, size, or shape of geometric objects"
+  visualization_elements:
+    - grid_transformation
+    - before_after_shapes
+    - transformation_arrows
+    - coordinate_changes
+
+# Statistical concepts
+distributions:
+  difficulty: 3
+  topic_area: statistics
+  prerequisites: [probability, functions]
+  related_concepts: [normal_distribution, sampling]
+  description: "Patterns of variation in data"
+  visualization_elements:
+    - histogram
+    - density_curve
+    - summary_statistics
+    - outliers
+
+regression:
+  difficulty: 4
+  topic_area: statistics
+  prerequisites: [functions, distributions]
+  related_concepts: [correlation, prediction]
+  description: "Relationships between variables in data"
+  visualization_elements:
+    - scatter_plot
+    - regression_line
+    - residuals
+    - confidence_bands
+
+# Applied concepts
+differential_equations:
+  difficulty: 5
+  topic_area: applied_math
+  prerequisites: [derivatives, integrals]
+  related_concepts: [modeling, systems]
+  description: "Equations involving rates of change"
+  visualization_elements:
+    - slope_field
+    - solution_curves
+    - equilibrium_points
+    - phase_portrait
+
+optimization:
+  difficulty: 4
+  topic_area: applied_math
+  prerequisites: [derivatives, functions]
+  related_concepts: [maximum, minimum, constraints]
+  description: "Finding best possible values under constraints"
+  visualization_elements:
+    - contour_plot
+    - gradient_vectors
+    - critical_points
+    - feasible_region
